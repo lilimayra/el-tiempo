@@ -1,0 +1,46 @@
+//variables
+$font_s: .9rem
+$font_m: 1rem
+$font_l: 1.5rem
+$font_xl: 2rem
+
+//Animaciones
+
+@keyframes animacion-rotacion-360
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)
+
+body
+    font-family: "popins", sans-serif
+    min-height: 100vh
+    color: white
+
+img
+    width: 100%
+
+button
+    background: none
+    border: 0
+    display: inline-block
+    padding: 0
+    &:hover
+        background: transparentize(white, .8)
+
+.container
+    max-width: 60rem
+    margin: 0 auto
+    padding: 0 1.5rem
+
+.header
+    transition: .3s
+    &--scroll
+        backdrop-filter: blur(.5rem)
+
+.titulo
+    &__icono
+        animation-name: animacion-rotacion-360
+        animation-duration: 5s
+        animation-iteration-count: infinite
+        animation-timing-function: linear

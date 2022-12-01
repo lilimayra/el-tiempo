@@ -1,0 +1,100 @@
+$font_s: .9rem
+$font_m: 1rem
+$font_l: 1.5rem
+$font_xl: 2rem
+
+body
+    background-image: linear-gradient(180deg, transparentize(black, .5 ), transparentize(orange, .5)), url("../img/fondo-mobile.webp")
+    background-size: cover
+
+.header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 100
+    .container
+        display: flex
+        justify-content: space-between
+        padding-top: 1.5rem
+
+.titulo
+    margin-top: 4rem
+    .container
+        display: flex
+        justify-content: space-between
+    &__dia
+        font-size: $font_xl
+        margin-bottom: 0
+    &__fecha-concreta
+        font-size: $font_s
+    &__tiempo
+        display: flex
+        align-items: center
+        gap: 1rem
+    &__temperatura
+        font-size: $font_xl
+    &__icono
+        $tamayo: 4rem
+        width: $tamayo
+        height: $tamayo
+
+.welcome
+    &__texto
+        font-size: $font_l
+
+.agenda
+    margin-bottom: 8rem
+    .container
+        padding-right: 0
+    &__cita
+        display: flex
+        align-items: center
+        gap: 1.5rem
+    &__numero, &__horario
+        display: block
+        text-align: center
+    &__numero
+        font-size: $font_l
+    &__horario
+        font-size: $font_m
+        text-transform: uppercase
+    &__titulo, &__descripcion
+        margin: 0
+    &__titulo
+        margin-bottom: .3rem
+        padding-top: 1.5rem
+        font-size: $font_m
+    &__descripcion
+        border-bottom: 1px solid white
+        padding-bottom: 1.5rem
+        font-size: $font_s
+    &__textos
+        flex-grow: 1
+
+.controles
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    padding: 1rem 0
+    backdrop-filter: blur(.5rem)
+    .container
+        display: flex
+        justify-content: space-around
+    &__imagen
+        width: 2rem
+    &__boton
+        $tamayo: 3rem
+        width: $tamayo
+        height: $tamayo
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        &--check
+            background-color: green
+        &--editar
+            background-color: yellow
+        &--anyadir
+            background-color: magenta

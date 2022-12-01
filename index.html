@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/static/img/apple-touch-icon/touch-icon-ipad.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/img/apple-touch-icon/touch-icon-iphone-retina.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="/static/img/apple-touch-icon/touch-icon-ipad-retina.png"
+    />
+    <meta name="theme-color" content="white" />
+    <meta
+      name="theme-color"
+      content="white"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="white"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta name="author" content="Tu nombre" />
+    <meta name="generator" content="Clojure" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="description" content="my description..." />
+    <meta property="og:image" content="img/screenshot.png" />
+    <meta property="og:title" content="The Rock" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@cuenta" />
+    <meta name="twitter:creator" content="@cuenta" />
+    <meta property="og:image:secure_url" content="https://..." />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fin fuentes -->
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <link
+      href="css/mobile.css"
+      rel="stylesheet"
+      media="all and (max-width: 600px)"
+    />
+    <link
+      href="css/desktop.css"
+      rel="stylesheet"
+      media="all and (min-width: 601px)"
+    />
+    <!-- Fin CSS -->
+    <!--javaScript-->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <!--Fin JavaScript-->
+  </head>
+  <body>
+    <header
+      class="header"
+      x-data="{ isTopScroll: true }"
+      @scroll.window="isTopScroll = window.pageYOffset === 0"
+      :class="isTopScroll ? '' : 'header--scroll'"
+    >
+      <div class="container">
+        <button class="header__nav">
+          <img src="img/menu.svg" alt="Nav" />
+        </button>
+        <button class="header__search">
+          <img src="img/search.svg" alt="Buscar" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="titulo">
+        <div class="container">
+          <div class="titulo_fecha">
+            <p class="titulo__dia">Martes</p>
+            <p class="titulo__fecha-concreta">
+              <time datetime="2022-11-29T11:15:00">Noviembre, 29, 2022</time>
+            </p>
+          </div>
+          <div class="titulo__tiempo">
+            <span class="titulo__temperatura"> 9 <sup>o</sup>c</span
+            ><img class="titulo__icono" src="img/sunny.svg" alt="soleado" />
+          </div>
+        </div>
+      </section>
+      <section class="welcome">
+        <div class="container">
+          <p class="welcome__texto">Hola Mayra!</p>
+        </div>
+      </section>
+      <section class="agenda">
+        <div class="container">
+          <article class="agenda__cita">
+            <div class="agenda__hora">
+              <span class="agenda__numero">8</span>
+              <span class="agena__horario">am</span>
+            </div>
+            <div class="agenda__textos">
+              <h2 class="agenda__titulo">Comerme el desayuno</h2>
+              <p class="agenda__descripcion">Si puede ser en el bar</p>
+            </div>
+          </article>
+          <article class="agenda__cita">
+            <div class="agenda__hora">
+              <span class="agenda__numero">9</span>
+              <span class="agena__horario">am</span>
+            </div>
+            <div class="agenda__textos">
+              <h2 class="agenda__titulo">Ir a clases</h2>
+              <p class="agenda__descripcion">Preguntar sobre Flex y Grid</p>
+            </div>
+          </article>
+          <article class="agenda__cita">
+            <div class="agenda__hora">
+              <span class="agenda__numero">12</span>
+              <span class="agena__horario">am</span>
+            </div>
+            <div class="agenda__textos">
+              <h2 class="agenda__titulo">Hacer actividades</h2>
+              <p class="agenda__descripcion">Tando pendientes como nuevas</p>
+            </div>
+          </article>
+          <article class="agenda__cita">
+            <div class="agenda__hora">
+              <span class="agenda__numero">16</span>
+              <span class="agena__horario">pm</span>
+            </div>
+            <div class="agenda__textos">
+              <h2 class="agenda__titulo">Clases de Ingles</h2>
+              <p class="agenda__descripcion">Online</p>
+            </div>
+          </article>
+          <article class="agenda__cita">
+            <div class="agenda__hora">
+              <span class="agenda__numero">9</span>
+              <span class="agena__horario">am</span>
+            </div>
+            <div class="agenda__textos">
+              <h2 class="agenda__titulo">Clases con Andros</h2>
+              <p class="agenda__descripcion">Academia idecrea</p>
+            </div>
+          </article>
+          <article class="agenda__cita">
+            <div class="agenda__hora">
+              <span class="agenda__numero">12</span>
+              <span class="agena__horario">am</span>
+            </div>
+            <div class="agenda__textos">
+              <h2 class="agenda__titulo">Cita medica</h2>
+              <p class="agenda__descripcion">llevar la tarjeta</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="controles">
+        <div class="container">
+          <button class="controles__boton controles__boton--check">
+            <img class="controles__imagen" src="img/done.svg" alt="check" />
+          </button>
+          <button class="controles__boton controles__boton--editar">
+            <img class="controles__imagen" src="img/edit.svg" alt="Editar" />
+          </button>
+          <button class="controles__boton controles__boton--anyadir">
+            <img class="controles__imagen" src="img/add.svg" alt="Ayadir" />
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

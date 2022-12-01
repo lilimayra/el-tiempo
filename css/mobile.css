@@ -1,0 +1,149 @@
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 165, 0, 0.5))), url("../img/fondo-mobile.webp");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(255, 165, 0, 0.5)), url("../img/fondo-mobile.webp");
+  background-size: cover;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.titulo {
+  margin-top: 4rem;
+}
+.titulo .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.titulo__dia {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.titulo__fecha-concreta {
+  font-size: 0.9rem;
+}
+.titulo__tiempo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.titulo__temperatura {
+  font-size: 2rem;
+}
+.titulo__icono {
+  width: 4rem;
+  height: 4rem;
+}
+
+.welcome__texto {
+  font-size: 1.5rem;
+}
+
+.agenda {
+  margin-bottom: 8rem;
+}
+.agenda .container {
+  padding-right: 0;
+}
+.agenda__cita {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+.agenda__numero, .agenda__horario {
+  display: block;
+  text-align: center;
+}
+.agenda__numero {
+  font-size: 1.5rem;
+}
+.agenda__horario {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.agenda__titulo, .agenda__descripcion {
+  margin: 0;
+}
+.agenda__titulo {
+  margin-bottom: 0.3rem;
+  padding-top: 1.5rem;
+  font-size: 1rem;
+}
+.agenda__descripcion {
+  border-bottom: 1px solid white;
+  padding-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+.agenda__textos {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.controles {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 0;
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+.controles .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.controles__imagen {
+  width: 2rem;
+}
+.controles__boton {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.controles__boton--check {
+  background-color: green;
+}
+.controles__boton--editar {
+  background-color: yellow;
+}
+.controles__boton--anyadir {
+  background-color: magenta;
+}
